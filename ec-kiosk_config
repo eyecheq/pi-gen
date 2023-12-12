@@ -1,0 +1,29 @@
+# The name of the image to build with the current stage directories
+IMG_NAME=ec-kiosk-os
+PI_GEN_RELEASE=0.0.1-alpha
+
+# Setting to '1' creates an image that can be mounted via QEMU for an emulated environment. The images include "-qemu" in the image file name.
+USE_QEMU=0
+
+# Default system locale
+LOCALE_DEFAULT=en_US.UTF-8
+KEYBOARD_KEYMAP=us
+KEYBOARD_LAYOUT="English (US)"
+TIMEZONE_DEFAULT=US/Eastern
+WPA_COUNTRY=US
+
+# Sets the initial hostname
+TARGET_HOSTNAME=eck-base-0000
+
+# Set the username and password for the first user and don't rename it on first boot
+FIRST_USER_NAME=eyecheq
+FIRST_USER_PASS=eyecheq
+DISABLE_FIRST_BOOT_USER_RENAME=1
+
+# Enable SSH by default
+ENABLE_SSH=1
+PUBKEY_ONLY_SSH=0
+PUBKEY_SSH_FIRST_USER="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM6iUoaTG7VQZM5Kr3IPS1TbXX4x3XOjfV5gJGq7pWCA jordan.duggan@gmail.com"
+
+# What stages of the build to process
+STAGE_LIST="stage0 stage1 stage2 stage3"
