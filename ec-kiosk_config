@@ -26,4 +26,4 @@ PUBKEY_ONLY_SSH=0
 PUBKEY_SSH_FIRST_USER="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM6iUoaTG7VQZM5Kr3IPS1TbXX4x3XOjfV5gJGq7pWCA jordan.duggan@gmail.com"
 
 # What stages of the build to process
-STAGE_LIST="stage0 stage1 stage2 stage3"
+STAGE_LIST="stage0 stage1 stage2_eck stage3_eck"
