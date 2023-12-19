@@ -1,0 +1,6 @@
+raspberrypi-net-mods raspberrypi-ui-mods
+alacarte rc-gui
+tree
+libgl1-mesa-dri libgles1 libgles2-mesa xcompmgr
+pprompt
+ffmpeg
