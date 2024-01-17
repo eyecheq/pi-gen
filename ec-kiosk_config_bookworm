@@ -1,5 +1,8 @@
+# Which version of Debian to target
+RELEASE=bookworm
+
 # The name of the image to build with the current stage directories
-IMG_NAME=ec-kiosk-os
+IMG_NAME=ec-kiosk-os-bookworm
 PI_GEN_RELEASE=0.0.1-alpha
 
 # Always build 64 bit version
@@ -12,7 +15,7 @@ USE_QEMU=0
 LOCALE_DEFAULT=en_US.UTF-8
 KEYBOARD_KEYMAP=us
 KEYBOARD_LAYOUT="English (US)"
-TIMEZONE_DEFAULT=US/Eastern
+TIMEZONE_DEFAULT=UTC
 WPA_COUNTRY=US
 
 # Sets the initial hostname
@@ -30,6 +33,9 @@ PUBKEY_SSH_FIRST_USER="ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM6iUoaTG7VQZM5Kr3IPS
 
 # What stages of the build to process
 STAGE_LIST="stage0 stage1 stage2_eck stage3_eck stage4_eck"
+
+# Disable output compression for the Packer ARM image plugin
+# DEPLOY_COMPRESSION=none 
 
 # Compress as GZ
 DEPLOY_COMPRESSION=gz
