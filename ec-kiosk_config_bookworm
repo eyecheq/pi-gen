@@ -6,7 +6,7 @@ ARCH='arm64'
 
 # The name of the image to build with the current stage directories
 IMG_NAME=ec-kiosk-os-bookworm
-PI_GEN_RELEASE=0.0.1-alpha
+PI_GEN_RELEASE=ec-kiosk-os-bookworm-0.0.1-alpha
 
 # Always build 64 bit version
 arm_64bit=1
