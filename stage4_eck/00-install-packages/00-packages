@@ -1,5 +1,6 @@
-
 raspberrypi-net-mods raspberrypi-ui-mods
+python3-pip
+python3-numpy
 tree
 libgl1-mesa-dri libgles1 libgles2-mesa xcompmgr
 pigpio python3-pigpio raspi-gpio python3-rpi.gpio
@@ -7,3 +8,4 @@ python3-spidev
 python3-smbus
 pprompt
 ffmpeg
+vlc
