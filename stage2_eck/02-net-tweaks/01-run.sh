@@ -1,5 +1,10 @@
 #!/bin/bash -e
 
+# Install static IP with dhcpcd5
+install -v -d					"${ROOTFS_DIR}/etc"
+install -v -m 664 files/dhcpcd.conf	"${ROOTFS_DIR}/etc/"
+
+# Install static IP
 install -v -d					"${ROOTFS_DIR}/etc/wpa_supplicant"
 install -v -m 600 files/wpa_supplicant.conf	"${ROOTFS_DIR}/etc/wpa_supplicant/"
 
