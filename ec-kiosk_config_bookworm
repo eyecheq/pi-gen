@@ -3,6 +3,7 @@ RELEASE=bookworm
 
 # Always build the latest 64 bit version
 ARCH='arm64'
+BASE_ARCH=arm64
 
 # The name of the image to build with the current stage directories
 IMG_NAME=ec-kiosk-os-bookworm
